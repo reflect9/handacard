@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet/less" href="css/handa.less" />
+	<link rel="stylesheet/less" href="css/bootstrap.min.css" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/handa.js" type="text/javascript"></script>
+	
+	<title>HandaCard</title>
+</head>
+
+<body id="problem-list">
+		<!-- TOP NAV -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">"한다!카드"</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">한다! 보기</a></li>
+					<li class="active"><a href="problem-list.html">문제? 보기</a></li>
+					<li class="active"><a href="about.html">한다! 란?</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right">
+					<div>3,312명이 행동하고 있습니다.</div>
+					<div>
+						<button data-toggle="modal" data-target=".hc-modal-login">로그인</button>
+					</div>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	<!-- TOP NAV END -->
+
+	<!-- LOG modal -->
+	<div class="modal fade hc-modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">로그인 방식을 선택하세요.</h4>
+	      		</div>
+	      		<div class="modal-body">
+			        <button type="button" class="btn btn-default">Facebook으로 로그임</button>
+			        <button type="button" class="btn btn-default">Google로 로그인</button>
+			        <button type="button" class="btn btn-default">Twitter로 로그인</button>
+		      	</div>
+	    	</div>
+	  	</div>
+	</div> <!-- LOG modal END -->	
+
+	<!-- MAIN CONTENT -->
+	<div class="container" id="container">
+		<div class="row">
+			<div class="hc-problem-list">
+				<!-- Problem item -->
+				<div class="hc-problem panel panel-default"> 
+					<div class="hc-problem-content">
+						<div class="hc-problem-title">지난 선거 때 놀러간 게 너무 후회돼요.</div>
+					</div>
+					<div class="hc-problem-status">
+						<div class="hc-total-pledges">
+							<span class="user-name">김개똥</span>님 외 322명이 참여하셨습니다.  
+						</div>
+						<div class="hc-problem-buttons">
+							<button type="button" class="btn btn-success">진행 중인 한다! <span>9개</span></button>
+							<button type="button" class="btn btn-primary">나부터 한다!</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div> 
+				<!-- END: Problem item -->
+
+				<!-- Problem item -->
+				<div class="hc-problem panel panel-default"> 
+					<div class="hc-problem-content">
+						<div class="hc-problem-title">해난사고시 대피 요령에 대한 지식이 부족해요.</div>
+					</div>
+					<div class="hc-problem-status">
+						<div class="hc-total-pledges">
+							1740명이 참여하고 있습니다.
+						</div>
+						<div class="hc-problem-buttons">
+							<button type="button" class="btn btn-success">진행 중인 한다! <span>12개</span></button>
+							<button type="button" class="btn btn-primary">나부터 한다!</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div> 
+				<!-- END: Problem item -->
+
+				<!-- Problem item -->
+				<div class="hc-problem panel panel-default"> 
+					<div class="hc-problem-content">
+						<div class="hc-problem-title">정치에 대한 관심이 없습니다..</div>
+					</div>
+					<div class="hc-problem-status">
+						<div class="hc-total-pledges">
+							865명이 참여하고 있습니다.
+						</div>
+						<div class="hc-problem-buttons">
+							<button type="button" class="btn btn-success">진행 중인 한다! <span>9개</span></button>
+							<button type="button" class="btn btn-default">한다!</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div> 
+				<!-- END: Problem item -->
+
+				<!-- Problem item -->
+				<div class="hc-problem panel panel-default"> 
+					<div class="hc-problem-content">
+						<div class="hc-problem-title">여색선의 안전관리 시스템이 너무 미흡한것 같아요.</div>
+					</div>
+					<div class="hc-problem-status">
+						<div class="hc-total-pledges">
+							273명이 참여하고 있습니다.
+						</div>
+						<div class="hc-problem-buttons">
+							<button type="button" class="btn btn-success">진행 중인 한다! <span>2개</span></button>
+							<button type="button" class="btn btn-primary">나부터 한다!</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div> 
+				<!-- END: Problem item -->
+
+				<!-- Problem item -->
+				<div class="hc-problem panel panel-default"> 
+					<div class="hc-problem-content">
+						<div class="hc-problem-title">뱃살이 점점 더 두꺼워져요.</div>
+					</div>
+					<div class="hc-problem-status">
+						<div class="hc-total-pledges">
+							79명이 참여하고 있습니다.
+						</div>
+						<div class="hc-problem-buttons">
+							<button type="button" class="btn btn-success">진행 중인 한다! <span>2개</span></button>
+							<button type="button" class="btn btn-primary">나부터 한다!</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div> 
+				<!-- END: Problem item -->
+
+			</div>
+		</div>	
+	</div>
+</body>
+
+<script>
+$(document).ready(function() {
+	$(".hc-problem-title").click(function() {
+		window.location.href = "problem.html";
+	});
+});
+
+</script>
+
+
+
+</html>

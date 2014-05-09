@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet/less" href="css/handa.less" />
+	<link rel="stylesheet/less" href="css/bootstrap.min.css" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/handa.js" type="text/javascript"></script>
+	
+	<title>HandaCard</title>
+</head>
+
+
+<body id="about">
+	<!-- TOP NAV -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">"한다!카드"</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">한다! 보기</a></li>
+					<li class="active"><a href="problem-list.html">문제? 보기</a></li>
+					<li class="active"><a href="about.html">한다! 란?</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right">
+					<div>3,312명이 행동하고 있습니다.</div>
+					<div>
+						<button data-toggle="modal" data-target=".hc-modal-login">로그인</button>
+					</div>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	<!-- TOP NAV END -->
+
+	<!-- LOG modal -->
+	<div class="modal fade hc-modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">로그인 방식을 선택하세요.</h4>
+	      		</div>
+	      		<div class="modal-body">
+			        <button type="button" class="btn btn-default">Facebook으로 로그인</button>
+			        <button type="button" class="btn btn-default">Google로 로그인</button>
+			        <button type="button" class="btn btn-default">Twitter로 로그인</button>
+		      	</div>
+	    	</div>
+	  	</div>
+	</div> <!-- LOG modal END -->	
+	
+
+
+	<!-- MAIN CONTENT -->
+	<div class="container" id="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>
+					한다! 카드에 오신 것을 환영합니다. <br><br>
+					사회는 그 구성원 한 명 한 명의 행동이 필요한 많은 문제들이 있습니다. 
+					분노하고 소리치는 것은 잠깐이지만, 문제가 해결되지는 않습니다. 
+					여러가지 문제들을 살펴보고 여러분이 동참할 수 있는 행동을 실천해주세요!<br>
+					<br>
+					아직 발견되지 못한 문제들은 또한 여러분이 직접 제시해주셔도 됩니다. 
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="hc-step well">
+					<h3>Step 1. 문제?</h3>
+					<div class='hc-message'>
+						어떤 문제에 관해 행동하실 것인지 선택해주세요. 제공된 문제 범주들 가운데 원하시는 것이 없으면 새로 만들 수도 있습니다. 
+					</div>
+					<div class="hc-buttons">
+						<a href="problem-list.html"><button class="btn btn-lg btn-primary">문제? 보기</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="hc-step well">
+					<h3>Step 2. 나도 한다</h3>
+					<div class='hc-message'>
+						다른 사람이 등록한 한다! 카드가 오호라, 좀 괜찮아 보이시나요? 그럼 “나도 한다!”를 눌러 주세요. 함께 하는 행동은 두배로 힘이 세지니까요.
+					</div>
+					<div class="hc-buttons">
+						<a href="index.html"><button class="btn btn-lg btn-primary">한다! 보기</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="hc-step well">
+					<h3>Step 3. 나부터 한다!</h3>
+					<div class='hc-message'>
+						이미 등록된 한다! 중에 마음에 드는 게 없다면, “나부터 한다!”를 눌러 자신의 한다!를 보여주세요. 좋은 한다!라면 다른 많은 사람들도 함께 할 겁니다.
+					</div>
+					<div class="hc-buttons">
+						<a href=""><button class="btn btn-lg btn-primary">나부터 한다!</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hc-step well">
+					<h3>Step 4. 좋은 한다!는 나눌수록 배가 됩니다.</h3>
+					<div class='hc-message'>
+						자신이 참여하고 있는 한다!를 페이스북이나 트위터로 공유하면 친구들에게 선언할 수 있습니다. 이렇게 선언을 해버리면 더 열심히 실행하게 되는 효과도 나고 행동에 동참할 지인들을 더 불러 모을 수도 있답니다.
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+	</div>
+
+
+
+</body>
+
+
+</html>

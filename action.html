@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet/less" href="css/handa.less" />
+	<link rel="stylesheet/less" href="css/bootstrap.min.css" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/handa.js" type="text/javascript"></script>
+	
+	<title>HandaCard</title>
+</head>
+
+
+<body id="problem">
+		<!-- TOP NAV -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">"한다!카드"</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">한다! 보기</a></li>
+					<li class="active"><a href="problem-list.html">문제? 보기</a></li>
+					<li class="active"><a href="about.html">한다! 란?</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right">
+					<div>3,312명이 행동하고 있습니다.</div>
+					<div>
+						<button data-toggle="modal" data-target=".hc-modal-login">로그인</button>
+					</div>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	<!-- TOP NAV END -->
+
+	<!-- LOG modal -->
+	<div class="modal fade hc-modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">로그인 방식을 선택하세요.</h4>
+	      		</div>
+	      		<div class="modal-body">
+			        <button type="button" class="btn btn-default" style="width:100%; margin-top:10px;">Facebook으로 로그임</button>
+			        <button type="button" class="btn btn-default" style="width:100%; margin-top:10px;">Google로 로그인</button>
+			        <button type="button" class="btn btn-default" style="width:100%; margin-top:10px;">Twitter로 로그인</button>
+		      	</div>
+	    	</div>
+	  	</div>
+	</div> <!-- LOG modal END -->	
+
+	<!-- MAIN CONTENT -->
+	<div class="container" id="container">
+
+		<div class="content">
+			<div class="hc-problem-menu">
+				<div style="float:left; font-size:24px; margin:15px;">
+					<button type="button" class="btn btn-lg btn-default">다른 문제 보기</button>
+				</div>
+			</div>
+			<div class="hc-problem panel panel-primary"> 
+				<div class="panel-heading">
+					<h2 class="panel-title">문제 문제 문제가 많습니다</h2>
+				</div>
+				<div class="panel-body hc-problem-description">
+					<div>사고도 사고지만, 이 사고가 도화선이 되어 한국 사회의 병든 일면들이 곳곳에서 터져나왔다. 전후상황을 살피지 않고 왜 구조 작업에 진전이 없냐며 비난하거나, 되도 않는 음모론을 펼쳐 사람들의 관심을 끈다든가 하는 일은 물론이요, 이 사고의 국민적 관심을 이용해서 이득을 취하려 하는 추악한 행태까지 벌어질 정도로 큰 문제가 드러나고 있지만, 이런 것들이 평범해보일 정도로 여기저기서 도저히 답이 안 나오는 일들이 계속 터져나오고 있다. 그 동안 대한민국은 졸속한 급성장으로 인해 사회에 각종 병폐가 채 치유될 틈도 없이 적폐되었고, 이러한 온갖 문제점들을 억눌러 오다가 결국 이번 사건을 계기로 한꺼번에 폭발한 것으로 볼 수 있다. # 오죽하면 대한민국호의 침몰이라고 비꼬는 문구까지 나돌 정도. 좋게 말하면 문제 해결의 동기 부여라고 할 수 있지만, 나쁘게 말하면 한국 사회의 막장성을 세계에 널리 알린 꼴이 된다.  </div>
+				</div>
+				<div class="panel-body">
+					<div class="hc-problem-authors">
+						<div class="user_info_small">
+							<div class="user_img" data-toggle="tooltip" data-placement="top" title="username"></div> 
+							<div class="user_name">김개똥</div>
+							<div class="user_time">2014.05.03 오후 1:28</div>
+						</div>
+					</div>
+					<div class="hc-problem-tools">
+						
+					</div>
+				</div>
+				<div class="panel-body hc-problem-comments">
+					<div class="input-group">
+							<input type="text" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">커멘트</button>
+							</span>
+					</div>
+					<div class="hc-comment-list">
+						<div class="hc-comment">
+							<span class="hc-comment-heading">5</span>
+							<span class="hc-comment-content">실종자모두찾길바래요</span>
+							<span class="hc-comment-author">이탁연</span>
+							<span class="hc-comment-time">2014.05.03 오후 1:28</span>
+							<span class="hc-comment-tools">답글 | 신고 | ... |</span>
+						</div>
+						<div class="hc-comment">
+							<span class="hc-comment-heading">2</span>
+							<span class="hc-comment-content">제대로 하는게 하나도 없는 무능한 공무원쉐리들</span>
+							<span class="hc-comment-author">정승연</span>
+							<span class="hc-comment-time">2014.05.03 오후 1:28</span>
+							<span class="hc-comment-tools">답글 | 신고 | ... |</span>
+						</div>
+						<div class="hc-comment">
+							<span class="hc-comment-heading">2</span>
+							<span class="hc-comment-content">같은 고등학생2학년으로 저도 제주도에 갔다왔는데.. 이 친구들이 너무 불쌍하고 슬픕니다. 살았다고 하더라도 그 친구들도 많이 힘들 것 같네요...</span>
+							<span class="hc-comment-author">김희선</span>
+							<span class="hc-comment-time">2014.05.03 오후 1:28</span>
+							<span class="hc-comment-tools">답글 | 신고 | ... |</span>
+						</div>
+					</div>
+					<div class="hc-comment-more">
+						
+					</div>
+				</div>	
+			</div>
+			<div class="hc-action-container">
+				<div class="hc-action-heading">
+					<div class="hc-action-heading-total-actions">
+						3개의 액션이 있습니다.  
+						<button class="btn btn-success btn-large">새로운 액션 제안</button>
+
+					</div>
+				</div>
+				<div class="hc-action-list">
+					<div class="hc-action hc-action-medium panel panel-default">
+						<div class="panel-body hc-action-content">
+							<div class="hc-action-content-title">이대로 가만 있으면 아이들에게 나쁜 세상을 물려주게 된다. 나의 아이를 살리기 위해서라도 독재 권력과 나쁜 자본과 싸우겠다. 아이들에게 좋은 세상을 물려 주려면 촛불을 들어야 한다. 그래야 돈과 권력이 아닌 사람 중심의 세상을 만들 수 있다.</div>
+							<div class="user_info_tiny">
+								<div class="user_name">김개똥</div>
+								<div class="user_detail">충남 천안</div>
+								<div class="user_time">2014.05.03 오후 1:28</div>
+							</div>
+						</div>
+						<div class="panel-body hc-action-pledge">
+							<button type="button" class="handa btn btn-success btn-sm">내가 한다</button>
+							<div class="pledge-count">1,321</div>
+						</div>
+					</div>	<!-- dummy action 1 end-->
+
+					
+					<div class="hc-action hc-action-medium panel panel-default">
+						<div class="panel-body hc-action-content">
+							<div class="hc-action-content-title">이대로 가만 있으면 아이들에게 나쁜 세상을 물려주게 된다. 나의 아이를 살리기 위해서라도 독재 권력과 나쁜 자본과 싸우겠다. 아이들에게 좋은 세상을 물려 주려면 촛불을 들어야 한다. 그래야 돈과 권력이 아닌 사람 중심의 세상을 만들 수 있다.</div>
+							<div class="user_info_tiny">
+								<div class="user_name">김개똥</div>
+								<div class="user_detail">충남 천안</div>
+								<div class="user_time">2014.05.03 오후 1:28</div>
+							</div>
+						</div>
+						<div class="panel-body hc-action-pledge">
+							<button type="button" class="handa btn btn-success btn-sm">내가 한다</button>
+							<div class="pledge-count">1,321</div>
+						</div>
+					</div>	<!-- dummy action 1 end-->
+
+					<div class="hc-action hc-action-medium panel panel-default">
+						<div class="panel-body hc-action-content">
+							<div class="hc-action-content-title">이대로 가만 있으면 아이들에게 나쁜 세상을 물려주게 된다. 나의 아이를 살리기 위해서라도 독재 권력과 나쁜 자본과 싸우겠다. 아이들에게 좋은 세상을 물려 주려면 촛불을 들어야 한다. 그래야 돈과 권력이 아닌 사람 중심의 세상을 만들 수 있다.</div>
+							<div class="user_info_tiny">
+								<div class="user_name">김개똥</div>
+								<div class="user_detail">충남 천안</div>
+								<div class="user_time">2014.05.03 오후 1:28</div>
+							</div>
+						</div>
+						<div class="panel-body hc-action-pledge">
+							<button type="button" class="handa btn btn-success btn-sm">내가 한다</button>
+							<div class="pledge-count">1,321</div>
+						</div>
+					</div>	<!-- dummy action 1 end-->
+
+				</div> <!-- action list end -->
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
