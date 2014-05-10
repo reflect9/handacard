@@ -70,8 +70,35 @@
 	  	</div>
 	</div> <!-- LOG modal END -->	
 
+	<!-- CREATE PROBLEM modal -->
+	<div class="modal fade hc-modal-create-problem" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">문제 제기</h4>
+	      		</div>
+	      		<div class="modal-body">
+	      			<textarea class="form-control" rows="2" id='problem-title' placeholder="문제 한줄 요약"></textarea>
+	      			<br>
+		      		<textarea class="form-control" rows="10" id='problem-description' placeholder="근본적인 문제가 무엇인지 설명해 주세요"></textarea>
+		      	</div>
+		      	<div class="modal-body">
+		      		<button class="btn btn-sm btn-default">이미지 첨부</button>
+		      	</div>
+		      	<div class="modal-body" style="text-align:center;">
+					<button type="button" class="btn btn-success" id="problem-create-confirm" style="width:150px;" >확인</button>
+		      	</div>
+	    	</div>
+	  	</div>
+	</div> <!-- CREATE PROBLEM modal END -->	
+
+
 	<!-- MAIN CONTENT -->
 	<div class="container" id="container">
+		<div class="row" style="text-align:right; margin-bottom:15px;">
+			<button type="button" class="btn btn-default" id="button-create-problem" data-toggle="modal" data-target=".hc-modal-create-problem">새 문제 제기</button> 	
+		</div>
 		<div class="row">
 			<div class="hc-problem-list">
 				<!-- Problem item -->
@@ -164,11 +191,15 @@
 				</div> 
 				<!-- END: Problem item -->
 
-			</div>
+
+			</div> <!-- END: Problem list -->
 		</div>	
+
+		<div class="row" style="text-align:right; margin-bottom:15px;">
+			<button type="button" class="btn btn-default" id="button-create-problem" data-toggle="modal" data-target=".hc-modal-create-problem">새 문제 제기</button> 	
+		</div>
+		
 	</div>
-
-
 <footer class="container-fluid">
 	<div class="container">
 		<div class="row">
