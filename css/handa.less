@@ -4,6 +4,10 @@
 @c4:#a0c53e;
 @c5:#0ab5bb;
 
+@cd:#333;
+@cm:#888;
+@cl:#ccc;
+
 @f1:12px;
 @f2:16px;
 @f3:20px;
@@ -24,6 +28,11 @@ COMMON STYLE
 body{
 	font-family: 'Malgun gothic' !important;
 	background: #D4D4CA  !important;
+}
+
+.card{
+	border: 1px solid rgba(0,0,0,.3) !important;
+	box-shadow: inset 0px -3px 0px rgba(0,0,0,.08), 0px 2px 5px rgba(0,0,0,.05) !important;
 }
 
 .blur{
@@ -106,6 +115,11 @@ a:hover, a:focus {
 	color: black;
 }
 
+.interaction{
+	text-align: right;
+	margin: 10px 0;
+}
+
 ////////////////////////////////////////////////////////////////////////
 // Shared components ///////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
@@ -124,34 +138,29 @@ a:hover, a:focus {
 
 .user_info_small {
 	position:relative;
-	padding:5px;
-	width:auto;
 	.user_img {
-		position:absolute;
-		left:0px; top:0px;
-		margin:5px;
-		width: 30px;
-		height: 30px;
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin:0 10px 0 0;
 		.full_r;
 		.shadow;
+		.div_img;
 	}
 	.user_name {
-		margin-left:40px;
-		font-size:13px;
-		font-weight:800;
-		color: #888;
+		font-size:1em;
+		font-weight:700;
+		color: @c2;
+		margin: 0;
 	}
 	.user_detail{
-		margin-left:40px;
 		font-size:13px;
-		font-weight:400;
 		line-height:1em;
 	}
 	.user_time {
-		margin-left:40px;
-		font-size:13px;
-		font-weight:400;
+		font-size:.8em;
 		line-height:1em;
+		color: @cm;
 	}
 
 }
@@ -168,9 +177,9 @@ a:hover, a:focus {
 	}
 	.user_name {
 		display:inline-block;
-		font-size:13px;
+		font-size:1em;
 		font-weight:800;
-		color: #888;
+		color: @c2;
 	}
 	.user_detail{
 		display:inline-block;
@@ -195,8 +204,8 @@ a:hover, a:focus {
 
 
 .hc-problem{
-	border: 1px solid #ddd;
-	box-shadow: inset 0px -3px 0px rgba(0,0,0,.08), 0px 2px 5px rgba(0,0,0,.05) !important;
+
+	.card;
 	width:100%;
 	position:relative;
 	padding:15px;
@@ -232,12 +241,12 @@ a:hover, a:focus {
 	background: #F0EFDD;
 	box-shadow: inset 0px -3px 0px rgba(0,0,0,.08), 0px 2px 5px rgba(0,0,0,.05) !important;
 
-	.fa-question-circle{
+	.fa-exclamation-triangle{
 		margin-right: 5px;
 		font-size: 1em;
 		color: rgba(0,0,0,.3);
 		text-shadow:0px 1px 0px white;
-	}	
+	}
 	i{
 		color: rgba(0,0,0,.2);
 		font-size: 2em;
@@ -250,6 +259,7 @@ a:hover, a:focus {
 	button{
 		i{
 			color: @c2;
+			font-size: 1.2em;
 		}
 	}
 }
@@ -257,8 +267,7 @@ a:hover, a:focus {
 .hc-action{
 	-webkit-transition:0.2s;
 	-moz-transition:0.2s;
-	border: 1px solid rgba(0,0,0,.3) !important;
-	box-shadow: inset 0px -3px 0px rgba(0,0,0,.08), 0px 2px 5px rgba(0,0,0,.05) !important;
+	.card;
 	overflow: hidden;
 	border-radius: 4px !important;
 	.pledge-count{
@@ -324,15 +333,26 @@ a:hover, a:focus {
 	.panel-body{
 		padding: 15px !important;
 	}
+	background: @c2 !important;
+	color: white;
+	textarea{
+		width: 100%;
+	}
+	h2{
+		text-align: right;
+		margin:0 0 16px;
+	}
+}
+
+.btn-create{
+	background: @c2;
 }
 
 
-
-
-footer{		
+footer{
 	font-size: 1.2em;
 	min-height: 450px;
-	background: url('../sewol.png') center center, @c2;		
+	background: url('../sewol.png') center center, @c2;
 	background-size: cover;
 	.row{
 		div{
@@ -367,18 +387,7 @@ body#index{
 			width:100%;
 		}
 	}
-	.hc-action-create{
-		background: @c2 !important;
-		color: white;
-		textarea{
-			width: 100%;
-		}
-		h2{
-			text-align: right;
-			margin:0 0 16px;
-		}
-	}
-	
+
 }
 
 body#about {
@@ -441,7 +450,6 @@ body#problem-list {
 	}
 	.hc-create-problem {
 		background-color:@bs_green_light;
-
 	}
 
 
@@ -452,15 +460,45 @@ body#problem-list {
 body#problem {
 
 	.hc-problem-panel {
+		background: #F0EFDD;
+		.fa-exclamation-triangle{
+			color: @c2;
+			font-size: 2.2em;
+			text-shadow: 0px 1px 0px white;
+			display: inline-block;
+			margin: 12px 10px 0 0;
+			float: left;
+		}
+
+		.hc-problem-description{
+
+		}
+		.more{
+			display: inline-block;
+			color: @c2;
+			font-size: 1em;
+		}
+		h3{
+			display: inline-block;
+			text-align: left;
+			margin: 10px 0 20px;
+		}
+		.card;
 		margin-top:15px;
 		.hc-problem-title {
 			font-size:22px;
 			max-height:400px;
 			overflow:hidden;
 		}
-		hc-problem-participation{
+		.hc-problem-participation{
+			float: right;
 			font-size:13px;
-			color:#666;
+			color:#666;			
+			span{
+				font-size: 2em;
+				color: @c2;
+				font-weight: 700;
+			}
 		}
 		.hc-problem-description{
 			font-size:15px;
@@ -468,9 +506,8 @@ body#problem {
 			margin-bottom:15px;
 		}
 	}
-	
+
 	.hc-comment-panel {
-		border: 1px solid @bs_blue;
 		padding:15px;
 		border-radius:4px;
 
@@ -479,9 +516,12 @@ body#problem {
 			border-bottom:1px dotted #aaa;
 			.hc-comment-heading{  font-size:11px;  font-weight:800; }
 			.hc-comment-content{   }
-			.hc-comment-author{ font-weight:800; color:@bs_blue;   }
-			.hc-comment-time{ font-weight:400; color:#000;   }
-			.hc-comment-tools{ font-size:12px; display:inline; }
+			.hc-comment-author{ font-weight:800; color:@c2;   }
+			.hc-comment-time{ font-size:.8em; color:@cl;   }
+			.hc-comment-tools{ font-size:.8em; display:inline; color:@cl;}
+			&:last-of-type{
+				border-bottom: none;
+			}
 		}
 		.hc-comment-more {
 			margin-top:10px;
@@ -491,6 +531,15 @@ body#problem {
 	}
 	.hc-action-container{
 		width:100%;
+		.hc-action-heading{
+			text-align: right;
+			.hc-action-heading-total-actions{
+				span{
+					font-weight: 700;
+					font-size: 1.2em;					
+				}
+			}
+		}
 		.hc-action-list{
 			margin-top:15px;
 			.hc-action{
