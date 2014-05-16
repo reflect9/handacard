@@ -5,6 +5,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet/less" href="css/bootstrap.min.css" />
     <link rel="stylesheet/less" href="css/font-awesome.min.css" />
+    <link rel="stylesheet/less" href="css/fontello.css" />
     <link rel="stylesheet/less" href="css/handa.less" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -27,17 +28,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">"한다!카드"</a>
+                <a class="navbar-brand" href="#" title="한다!카드"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="index.html">한다! 보기</a>
+                    <li class=""><a href="index.html"><i class="icon-do-all"></i>보기</a>
                     </li>
-                    <li class="active"><a href="problem-list.html">문제? 보기</a>
+                    <li class="active"><a href="problem-list.html"><i class="icon-pr-all"></i>보기</a>
                     </li>
-                    <li class=""><a href="about.html">한다! 란?</a>
+                    <li class=""><a href="about.html"><i class="icon-do-all"></i>란?</a>
                     </li>
                 </ul>
                 <div class="nav navbar-nav navbar-right">
@@ -55,20 +56,20 @@
 
 	<!-- LOG modal -->
 	<div class="modal fade hc-modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-	  	<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">로그인 방식을 선택하세요.</h4>
-	      		</div>
-	      		<div class="modal-body">
-			        <button type="button" class="btn btn-default">Facebook으로 로그임</button>
-			        <button type="button" class="btn btn-default">Google로 로그인</button>
-			        <button type="button" class="btn btn-default">Twitter로 로그인</button>
-		      	</div>
-	    	</div>
-	  	</div>
-	</div> <!-- LOG modal END -->	
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">로그인 방식을 선택하세요.</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn fb btn-default">Facebook으로 로그인</button>
+                    <button type="button" class="btn gg btn-default">Google로 로그인</button>
+                    <button type="button" class="btn tw btn-default">Twitter로 로그인</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- LOG modal END -->	
 
 	<!-- CREATE PROBLEM modal -->
 	<div class="modal fade hc-modal-create-problem" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -108,7 +109,7 @@
 					</div>
 					<div class="hc-problem-status">
 						<div class="hc-total-pledges">
-							<span class="user-name">김개똥</span>님 외 322명이 참여하셨습니다.  
+							<span class="user-name">김개똥</span>님 외 <span>322</span>명이 참여하셨습니다.  
 						</div>
 						<div class="hc-problem-buttons">
 							<button type="button" class="btn btn-success">진행 중인 한다! <span>9개</span></button>
@@ -126,7 +127,7 @@
 					</div>
 					<div class="hc-problem-status">
 						<div class="hc-total-pledges">
-							1740명이 참여하고 있습니다.
+							<span>1740</span>명이 참여하고 있습니다.
 						</div>
 						<div class="hc-problem-buttons">
 							<button type="button" class="btn btn-success">진행 중인 한다! <span>12개</span></button>
@@ -144,7 +145,7 @@
 					</div>
 					<div class="hc-problem-status">
 						<div class="hc-total-pledges">
-							865명이 참여하고 있습니다.
+							<span>865</span>명이 참여하고 있습니다.
 						</div>
 						<div class="hc-problem-buttons">
 							<button type="button" class="btn btn-success">진행 중인 한다! <span>9개</span></button>

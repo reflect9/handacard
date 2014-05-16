@@ -69,6 +69,13 @@ body{
 	}
 }
 
+.emp{
+	font-size: 2em;
+	color: @c2;
+	font-size: 700;
+}
+
+
 a{
 
 }
@@ -371,6 +378,7 @@ body#index{
 	.hc-action {
 		width:270px;
 		margin-bottom: 10px;
+
 		.pledge-count {
 			text-align:right;
 		}
@@ -434,14 +442,13 @@ body#problem-list {
 			.hc-problem-authors{
 			}
 			.hc-total-pledges {
-				position:absolute;
-				bottom:0px; left:0px;
-				margin:15px;
+				float: left;
+				span{
+					.emp;
+				}
 			}
 			.hc-problem-buttons {
-				position:absolute;
-				bottom:0px; right:0px;
-				margin:15px;
+				float: right;
 				button {
 					width:150px;
 				}
@@ -674,6 +681,46 @@ body#problem {
 			height: 40px;
 			top: 5px;
 			left: 5px;
+		}
+	}
+}
+
+.hc-modal-login{
+	button.btn{
+		width: 100%;
+		margin: 0 0 5px 0;
+		display: block;
+		color: white;
+		position: relative;
+		&:last-of-type{
+			margin: 0;
+		}
+		&:after{
+			font-family: 'FontAwesome';
+			color: white;
+			position: absolute;
+			left: 6px;
+			font-size: 1.6em;
+			top: 0;
+		}
+	}
+	.fb{
+		background: #3b5998;
+		&:after{
+			content: "\f082";
+			
+		}		
+	}
+	.gg{
+		background: #DF4A32;
+		&:after{
+			content: "\f0d4";
+		}
+	}
+	.tw{
+		background: #1DCAFF;
+		&:after{
+			content: "\f081";
 		}
 	}
 }
