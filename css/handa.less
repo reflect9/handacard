@@ -655,3 +655,25 @@ body#problem {
 
 	}
 }
+
+.navbar-brand{
+	width: 100px;
+	position: relative;
+	z-index: 1;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		top: 10px;
+		left: 10px;
+		background: url('../handa_logo.png') center center;
+		background-size:cover;		
+		@media (max-width:768px) {
+			width: 40px;
+			height: 40px;
+			top: 5px;
+			left: 5px;
+		}
+	}
+}
